@@ -16,6 +16,7 @@
  
 **Known issues**
  - It needs refactoring to support duplicate data handling
+ - It needs design refactoring
  
  ##Usage
  
