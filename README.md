@@ -11,8 +11,6 @@ Finding The Median In Large Sets Of Numbers Split Across N Servers using zeromq 
   - The recursive step is that the master sends `GET_LOWER_UPPER_COUNTS` message to get lower and upper counts regarding to estimated median.
  
 **Improvements**
- - Count-sort could be used in the workers in sort step, because we have max response time value in order to get lower and upper counts in constant time and reduce sort algorithm.
- - Could be calculate average incrementally by StatsCollector on master.
  - Could be improve design by decouple from ZeroMQ to provide extensibility (e.g MPI).
  - Dynamically manage worker size and data distribution to workers and continuous data processing
  - Could be implement multi-core processing using cluster on worker nodes to improve performance
