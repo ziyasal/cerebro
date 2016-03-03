@@ -11,7 +11,7 @@
  
 **Improvements**
  - Could be improve design by decouple from ZeroMQ to provide extensibility (e.g MPI).
- - Dynamically manage worker size and data distribution to workers and continuous data processing
+ - Dynamically manage worker size and data distribution to workers and continuous data processing (streaming)
  - Could be implement multi-core processing using cluster on worker nodes to improve performance
  
 **Known issues**
