@@ -1,5 +1,4 @@
-Finding The Median In Large Sets Of Numbers Split Across N Servers using zeromq and nodejs (experimental)
-=====================================
+###Finding The Median In Large Sets Of Numbers Split Across N Servers using zeromq and nodejs (experimental)
 
 - It takes a data and distributes the data equally to workers;
 - When StatsCollector's `getMedian` is called, sends `SORT` message to sort data on workers as first step,
