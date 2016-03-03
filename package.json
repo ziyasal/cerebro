@@ -1,0 +1,33 @@
+{
+  "name": "finding-the-median-in-large-data-sets-of-numbers-spilit-across-n-servers",
+  "version": "0.0.1",
+  "description": "Finding The Median In Large Sets Of Numbers Split Across N Servers using zeromq and nodejs (experimental)",
+  "main": "main.js",
+  "scripts": {
+    "start": "",
+    "lint": "eslint lib/** master/** worker/**",
+    "test": "node ./node_modules/mocha/bin/_mocha --timeout 20000 tests/common/*.spec.js & node ./node_modules/mocha/bin/_mocha --timeout 20000 tests/collector/*.spec.js",
+    "test-cov": "node ./node_modules/isparta/bin/isparta cover --report lcov --report text --report html ./node_modules/mocha/bin/_mocha  -- --timeout 20000 --reporter dot tests/**/*.spec.js",
+    "test-travis": "node ./node_modules/isparta/bin/isparta cover --report lcov ./node_modules/mocha/bin/_mocha  -- --timeout 20000 --reporter dot tests/**/*.spec.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "author": "ziyasal <sarikayaziya@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "lodash": "^4.5.0",
+    "nconf": "^0.8.4",
+    "node-uuid": "^1.4.7",
+    "tracer": "^0.8.3",
+    "yargs": "^4.1.0",
+    "zmq": "^2.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^2.2.0",
+    "isparta": "^4.0.0",
+    "mocha": "^2.3.4",
+    "portfinder": "^1.0.1",
+    "sinon": "^1.17.2",
+    "validator": "^4.5.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "zmq": {
+    "resultPushPullSocketAddress": "tcp://127.0.0.1:3003",
+    "pushPullSocketAddress": "tcp://127.0.0.1:3002",
+    "pubSubSocketAddress": "tcp://127.0.0.1:3001"
+  },
+  "batchSize": 3000,
+  "workerSize": 3
+}
