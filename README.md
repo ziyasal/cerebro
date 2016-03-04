@@ -1,5 +1,5 @@
 ###Finding The Median In Large Sets Of Numbers Split Across N Servers using zeromq and nodejs (experimental)
-[![Build Status](https://travis-ci.org/ziyasal/cerebro.svg?branch=master)](https://travis-ci.org/ziyasal/cerebro)
+[![Build Status](https://travis-ci.org/ziyasal/cerebro.svg?branch=master)](https://travis-ci.org/ziyasal/cerebro)  [![Coverage Status](https://coveralls.io/repos/github/ziyasal/cerebro/badge.svg?branch=master)](https://coveralls.io/github/ziyasal/cerebro?branch=master)
 
 - It takes a data and distributes the data equally to workers;
 - When StatsCollector's `getMedian` is called, sends `SORT` message to sort data on workers as first step,
